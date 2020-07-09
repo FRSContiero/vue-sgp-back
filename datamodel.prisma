@@ -1,0 +1,69 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String! @unique
+  password: String!
+}
+
+type Prospect {
+  id: ID! @unique
+  companyName: String!
+  fantasyName: String!
+  status: String!
+  observation: String
+  businessSize: String!
+  webSite: String
+  cnpj: String! @unique
+  active: Boolean!
+}
+
+type Contact {
+  id: ID! @unique
+  name: String!
+  businessPosition: String
+  email: String
+  celular: String
+  observation: String
+}
+
+type Scheduling {
+  id: ID! @unique
+  subject: String!
+  description: String!
+  status: String!
+  type: String!
+  user: User!
+  prospect: Prospect!
+}
+
+type City {
+  id: ID! @unique
+  name: String!
+  state: String! 
+}
+
+type Address {
+  id: ID! @unique
+  cep: String!
+  street: String!
+  neighborhood: String!
+  number: String!
+  city: City!
+}
+
+type Phase {
+  id: ID! @unique
+  description: String!
+}
+
+type PhasesLog {
+  id: ID! @unique
+  phase: Phase!
+  prospect: Prospect!
+  user: User!
+}
+
+type Industry {
+  id: ID! @unique
+  description: String!
+}
