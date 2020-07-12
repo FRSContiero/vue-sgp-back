@@ -1,0 +1,23 @@
+{
+  "name": "vue-sgp-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRSContiero/vue-sgp-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FRSContiero/vue-sgp-back/issues"
+  },
+  "homepage": "https://github.com/FRSContiero/vue-sgp-back#readme",
+  "dependencies": {
+    "prisma-client-lib": "1.28.3"
+  }
+}
