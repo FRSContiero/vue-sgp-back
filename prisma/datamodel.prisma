@@ -14,7 +14,7 @@ type Prospect {
   businessSize: String!
   webSite: String
   cnpj: String! @unique
-  active: Boolean!
+  active: Boolean! 
 }
 
 type Contact {
